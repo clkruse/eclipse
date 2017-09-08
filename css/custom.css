@@ -1,0 +1,103 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.nyt-header {
+  /*border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3); */
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.text-shadow {
+  /*padding-left: .8%;
+  padding-right: .8%;
+  background: rgba(0,0,0,0.3); */
+
+  text-shadow: 0 0 2.5px rgba(0,0,0,1);
+}
+
+.image-slider.height-40 .slides li {
+  height: 40vh;
+
+}
+
+.list-inline a {
+  color: #505050;
+}
+
+.h1mod {
+  font-size: 4.3vw;
+  margin-top:-9px;
+}
+
+.btn-NG:hover,
+.image-bg .btn:hover,
+.image-bg .btn:visited:hover {
+  background: #ffce00;
+  border-color: #ffce00;
+}
+.module.widget-handle-menu {
+  padding: 0 16px;
+  cursor: pointer;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.popup .content {
+  overflow: scroll;
+}
+
+.overlay {
+    display: none;
+}
+.overlay:target {
+  content:"";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 9;
+}
+.overlay:target .popup {
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  padding: 25px;
+  z-index: 10;
+  overflow: scroll;
+}
+.overlay .popup {
+    top: -100%;
+    left: -100%;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+    overflow: scroll;
+  }
+  .overlay .popup{
+    width: 70%;
+    height:80%;
+    left: 15%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
